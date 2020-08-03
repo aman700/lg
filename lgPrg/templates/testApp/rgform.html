@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% extends 'testApp/base.html'%}
+
+{% block child_block %}
+<div class="container"align='center'>
+  <h1>Register Here...</h1>
+  <form method="post">
+
+    {{form.as_p}}
+    {% csrf_token %}
+    <input type="submit" name="" value="Register">
+
+  </form>
+
+
+</div>
+
+
+{% endblock %}
